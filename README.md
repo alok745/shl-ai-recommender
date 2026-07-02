@@ -39,26 +39,35 @@ The system combines semantic retrieval, conversation memory, rule-based filterin
 ```text
 app/
     api.py
+    catalog.json
     chatbot.py
     clarification.py
     config.py
+    embeddings.py
     guardrails.py
     llm.py
     main.py
     memory.py
     models.py
+    prompts.py
     recommendation.py
     retriever.py
     utils.py
+
+tests/
+    test_chat.py
+    test_chatbot.py
+    test_guardrails.py
+    test_llm.py
+    test_recommendation.py
+    test_retriever.py
 
 vector_store/
     metadata.pkl
     shl.index
 
-tests/
-
-catalog.json
-
+.env.example
+.gitignore
 requirements.txt
 
 README.md
